@@ -1,13 +1,55 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Raju's Khana Khazana</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajus Khana Khazana</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .title p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-    <h1 style="text-align: center; font-weight: bold;">
-        Hello Everyone, Welcome to Raju's Khana Khazana Page
-    </h1>
+<div class="title">
+    <h1>Rajus Khana Khazana</h1>
+    <p>Wine and Dine Restaurant</p>
+</div>
+
+<script>
+for (let i = 1; i <= 20; i++) {
+    let img = document.createElement("img");
+    img.src = `./images/pg${i}.jpg`;
+    img.loading = "lazy";
+    document.body.appendChild(img);
+}
+</script>
 
 </body>
 </html>
